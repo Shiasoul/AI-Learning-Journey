@@ -1,8 +1,9 @@
 import random
+import numpy as np
 
 def get_computer_choice():
-    choices = ["rock", "paper", "scissors"]
-    return random.choice(choices)
+    choices = np.array(["rock", "paper", "scissors"])
+    return np.random.choice(choices)
 
 def get_winner(user, computer):
     if user == computer:
